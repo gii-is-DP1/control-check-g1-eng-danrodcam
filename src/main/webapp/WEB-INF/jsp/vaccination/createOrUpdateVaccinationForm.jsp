@@ -16,7 +16,7 @@
     </jsp:attribute>
     <jsp:body>
     <h2>
-        <c:if test="${vaccination['new']}">New </c:if> Vaccination
+       Vaccination
     </h2>
     <form:form modelAttribute="vaccination" class="form-horizontal" id="add-vaccination-form">
         <div class="form-group has-feedback">
@@ -30,14 +30,9 @@
         </div>
         <div class="form-group">
             <div class="col-sm-offset-2 col-sm-10">
-                <c:choose>
-                    <c:when test="${vaccination['new']}">
-                        <button class="btn btn-default" type="submit">Add Vaccination</button>
-                    </c:when>
-                    <c:otherwise>
-                        <button class="btn btn-default" type="submit">Update Vaccination</button>
-                    </c:otherwise>
-                </c:choose>
+                  <button class="btn btn-default" type="submit">Add Vaccination</button>
+                        
+                    
             </div>
         </div>
     </form:form>

@@ -32,6 +32,7 @@ INSERT INTO types VALUES (4, 'snake');
 INSERT INTO types VALUES (5, 'bird');
 INSERT INTO types VALUES (6, 'hamster');
 
+
 INSERT INTO owners VALUES (1, 'George', 'Franklin', '110 W. Liberty St.', 'Madison', '6085551023', 'owner1');
 INSERT INTO owners VALUES (2, 'Betty', 'Davis', '638 Cardinal Ave.', 'Sun Prairie', '6085551749', 'owner1');
 INSERT INTO owners VALUES (3, 'Eduardo', 'Rodriquez', '2693 Commerce St.', 'McFarland', '6085558763', 'owner1');
@@ -61,4 +62,13 @@ INSERT INTO visits(id,pet_id,visit_date,description) VALUES (1, 7, '2013-01-01',
 INSERT INTO visits(id,pet_id,visit_date,description) VALUES (2, 8, '2013-01-02', 'rabies shot');
 INSERT INTO visits(id,pet_id,visit_date,description) VALUES (3, 8, '2013-01-03', 'neutered');
 INSERT INTO visits(id,pet_id,visit_date,description) VALUES (4, 7, '2013-01-04', 'spayed');
+
+
+INSERT INTO vaccine(id,name,pet_type_id,price) VALUES (1,'Anti-rabid',2, 50.0);
+INSERT INTO vaccine(id,name,pet_type_id,price) VALUES (2,'Covid19 for Cats',1, 1200.5);
+
+INSERT INTO vaccination(id,date,vaccinated_pet_id, vaccine_id) VALUES(1,'2021-12-08',1,2);
+INSERT INTO vaccination(id,date,vaccinated_pet_id,vaccine_id) VALUES(2,'2021-10-08',3,1);
+
+
 
